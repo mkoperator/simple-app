@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: simple-app
-        image: docker.io/thecrazyrussian/simple-app:6
+        image: docker.io/thecrazyrussian/simple-app:3
         ports:
         - containerPort: 80
         env:

@@ -7,7 +7,7 @@ spec:
   - host: democluster.simpleblocks.net
     http:
       paths:
-      - path: /
+      - path: /simple-app
         backend:
           serviceName: simple-app 
           servicePort: 80
