@@ -16,6 +16,11 @@ spec:
     spec:
       containers:
       - name: simple-app
-        image: docker.io/thecrazyrussian/simple-app:latest
+        image: docker.io/thecrazyrussian/simple-app:6
         ports:
         - containerPort: 80
+        env:
+          - name: MY_POD_NODE
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
